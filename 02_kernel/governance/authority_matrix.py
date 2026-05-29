@@ -1,6 +1,6 @@
 ﻿"""
 Prospera Authority Matrix
-Repo: prospera-esg-validator
+Repo: prospera-esg-blueprint
 Version: v1.0
 """
 AUTHORITY_MATRIX = {

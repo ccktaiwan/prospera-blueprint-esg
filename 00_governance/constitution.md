@@ -1,6 +1,6 @@
 ---
-# prospera-esg-validator Constitution
-Prospera-ID: prospera-esg-validator
+# prospera-esg-blueprint Constitution
+Prospera-ID: prospera-esg-blueprint
 Layer: L5
 Governed-By: prospera-engineering-codex v1.0
 Owner: ccktaiwan

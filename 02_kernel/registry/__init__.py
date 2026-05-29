@@ -1,2 +1,2 @@
-﻿# Registry loader for prospera-esg-validator
+﻿# Registry loader for prospera-esg-blueprint
 REGISTRY = {}
