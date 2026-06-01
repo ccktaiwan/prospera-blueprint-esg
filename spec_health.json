@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-06-01T19:51:09.823599",
+  "repo": "prospera-blueprint-esg",
+  "type": "SPEC",
+  "reference": {
+    "repo": "prospera-blueprint-esg",
+    "referenced": false,
+    "status": "ORPHANED"
+  },
+  "version": {
+    "contract": true,
+    "agents": true,
+    "status": "CONSISTENT"
+  },
+  "activity": {
+    "active": true,
+    "status": "ACTIVE"
+  }
+}
