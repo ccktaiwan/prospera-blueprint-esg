@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-06-01T19:51:09.823599",
+  "timestamp": "2026-06-02T02:31:15.305191",
   "repo": "prospera-blueprint-esg",
   "type": "SPEC",
   "reference": {
     "repo": "prospera-blueprint-esg",
-    "referenced": false,
-    "status": "ORPHANED"
+    "referenced": true,
+    "status": "REFERENCED"
   },
   "version": {
     "contract": true,
