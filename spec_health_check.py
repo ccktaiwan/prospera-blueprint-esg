@@ -2,9 +2,7 @@ import os, json, datetime, subprocess as _sp
 from pathlib import Path
 
 REPO_NAME = 'prospera-blueprint-esg'
-EXEC_REPOS = ['prospera-os','prospera-gateway','prospera-product-exam',
-              'prospera-product-consulting','prospera-product-gengrant',
-              'prospera-agent-orchestrator']
+EXEC_REPOS = ['prospera-product-esg', 'prospera-os', 'prospera-gateway', 'prospera-product-exam', 'prospera-product-consulting', 'prospera-product-gengrant', 'prospera-agent-orchestrator']
 GITHUB_ROOT = r'C:\AI_WorkDir\GitHub'
 
 def check_reference_integrity() -> dict:
@@ -13,6 +11,7 @@ def check_reference_integrity() -> dict:
         repo_path = Path(GITHUB_ROOT) / exec_repo
         if not repo_path.exists():
             continue
+        # Check .py files
         for py_file in repo_path.rglob('*.py'):
             try:
                 if REPO_NAME in py_file.read_text(encoding='utf-8', errors='ignore'):
@@ -22,8 +21,20 @@ def check_reference_integrity() -> dict:
                 continue
         if referenced:
             break
+        # Check CONTRACT.md for semantic reference
+        contract = repo_path / 'CONTRACT.md'
+        if contract.exists():
+            try:
+                if REPO_NAME in contract.read_text(encoding='utf-8', errors='ignore'):
+                    referenced = True
+                    break
+            except Exception:
+                pass
+        if referenced:
+            break
     return {'repo': REPO_NAME, 'referenced': referenced,
             'status': 'REFERENCED' if referenced else 'ORPHANED'}
+
 
 def check_version_consistency() -> dict:
     base = Path(__file__).resolve().parent
