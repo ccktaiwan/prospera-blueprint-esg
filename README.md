@@ -1,5 +1,5 @@
 ---
-Prospera-ID: prospera-esg-validator
+Prospera-ID: prospera-blueprint-esg
 Governance-Category: APPLICATION
 Layer-Position: "L4 (Execution Engine - Vertical 02: ESG)"
 Human-Authorizing-Engineer: "ccktaiwan (MND-Authority)"
