@@ -1,8 +1,9 @@
 {
+  "_ip_notice": "創造性歸 Kevin(發明人), AI 為執行工具 (ADR-0032)",
   "organization_id": "LAPTOP-NODE-001",
   "reporting_period": "2026-Q1",
   "emissions": {
-    "scope_01": 250.00,
+    "scope_01": 250.0,
     "scope_02": 450.75,
     "scope_03": 100.25
   },

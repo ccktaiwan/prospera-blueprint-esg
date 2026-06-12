@@ -1,5 +1,6 @@
-﻿{
-    "date":  "2026-02-28",
-    "supplier_gid":  "SUP-TW-TP-001",
-    "credit_rank":  "B"
+{
+  "_ip_notice": "創造性歸 Kevin(發明人), AI 為執行工具 (ADR-0032)",
+  "date": "2026-02-28",
+  "supplier_gid": "SUP-TW-TP-001",
+  "credit_rank": "B"
 }
